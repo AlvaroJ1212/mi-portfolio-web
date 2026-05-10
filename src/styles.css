@@ -2,9 +2,9 @@
   --neon-blue: #00f2ff;
   --neon-purple: #bc13fe;
   --neon-green: #00ff41;
-  --bg-dark:    radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+  --bg-dark:    #020617;
   --panel-bg:   rgba(15, 23, 42, 0.75);
-  --text-main:  #1e293b;
+  --text-main:  #e2e8f0;
 }
 
 body {
