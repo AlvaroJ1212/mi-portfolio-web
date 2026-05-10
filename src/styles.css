@@ -2,9 +2,9 @@
   --neon-blue: #00f2ff;
   --neon-purple: #bc13fe;
   --neon-green: #00ff41;
-  --bg-dark:    #0f172a;
+  --bg-dark:    #f1f5f9;
   --panel-bg: rgba(15, 23, 42, 0.75);
-  --text-main:  #f8fafc;
+  --text-main:  #1e293b;
 }
 
 body {
