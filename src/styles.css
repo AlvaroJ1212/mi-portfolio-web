@@ -1,10 +1,10 @@
 :root {
-  --neon-blue: #00f2ff;
-  --neon-purple: #bc13fe;
+  --neon-blue:  #10b981;
+  --neon-purple:#bc13fe;
   --neon-green: #00ff41;
-  --bg-dark:    #020617;
+  --bg-dark:    #050505;
   --panel-bg:   rgba(15, 23, 42, 0.75);
-  --text-main:  #e2e8f0;
+  --text-main:  #d1d5db;
 }
 
 body {
