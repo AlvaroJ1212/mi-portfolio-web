@@ -132,7 +132,6 @@ function renderMain() {
           <p class="tag">${t.header.subtitle}</p>
           
           <div class="user-meta">
-            <p><span>ID:</span> 001-JR-PLAT</p>
             <p><span>MAIL:</span> <a href="mailto:${t.contact.email}">${t.contact.email}</a></p>
           </div>
 
