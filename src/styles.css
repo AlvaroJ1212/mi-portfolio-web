@@ -15,7 +15,7 @@ body {
   overflow-x: hidden;
 }
 
-a { text-decoration: color; }
+a { text-decoration: none; }
 
 /* --- 1. EFECTOS GLOBALES Y ARRANQUE --- */
 .scanline {
@@ -177,11 +177,16 @@ a { text-decoration: color; }
   .user-meta { text-align: left; }
 }
 
-.email-link {
-  color: #ffffff !important;
-  text-decoration: none;
+.user-meta a {
+  color: #ffffff !important; /* Lo fuerza a blanco puro */
+  text-decoration: none;     /* Quita la línea de abajo si la tiene */
+  transition: color 0.3s ease; /* Hace que el cambio de color sea suave */
 }
 
-.email-link:hover {
+.user-meta a:hover {
   color: var(--neon-blue) !important; 
+}
+
+.user-meta p span {
+  color: #ffffff !important;
 }
