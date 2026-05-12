@@ -5,7 +5,6 @@ type Lang = 'es' | 'en';
 const data = {
   es: {
     booting: "Iniciando portfolio...",
-    nav: { about: "Sobre Mí", portfolio: "Portfolio", cv: "Curriculum" },
     header: { title: "Álvaro Jesús Rodríguez Muñoz", subtitle: "Junior Platform Engineer", status: "ESTADO: BUSCANDO EMPLEO" },
     contact: { 
       email: "alvarojesus1492@gmail.com", 
@@ -14,7 +13,7 @@ const data = {
     },
     about: { 
       cmd: "> SOBRE MI",
-      text: "Soy Desarrollador de Software especializado en automatización e infraestructura cloud. Mi perfil combina una formación inicial en el ambito del Periodismo y de la Docencia como profesor de español con estudios técnicos en Desarrollo de Aplicaciones Multiplataforma. Durante mi etapa práctica como Junior Platform Engineer en Semantic Visions, el trabajo se centró estrictamente en la Infraestructura como Código (IaC) y la gestión de clústeres. Técnicamente, me especializo en aprovisionar entornos en Google Cloud Platform (GCP), configurar recursos mediante Terraform y administrar cargas de trabajo en Kubernetes, priorizando la automatización de pipelines y la observabilidad de los sistemas." 
+      text: "Soy Desarrollador de Software especializado en automatización e infraestructura cloud. Mi perfil combina una formación inicial en el ambito del Periodismo y de la Docencia como profesor de español con estudios técnicos en Desarrollo de Aplicaciones Multiplataforma. Durante mi etapa práctica como Junior Platform Engineer en Semantic Visions, el trabajo se centró estrictamente en la Infraestructura como Código (IaC) y la gestión de clústeres. Técnicamente, me especializo en aprovisionar entornos en Google Cloud Platform (GCP), configurar recursos mediante Terraform y administrar cargas de trabajo en Kubernetes, priorizando la automatización de pipelines y la observabilidad de los sistemas" 
     },
     terminal: { label: "Consola de Sistema" },
     skillsTitle: "Stack",
@@ -23,7 +22,7 @@ const data = {
       title: "CV",
       experience: [
         { period: "Marzo 2026 - Junio 2026", role: "Junior Platform Engineer", company: "Semantic Visions", task: "Automatización de despliegues en AWS y gestión de clusters K8s." },
-        { period: "Marzo 2025 - Junio 2025", role: "Profesor de Español", company: "Universidad Masaryk", task: "Impartición de clases de español como lengua extranjera y diseño de material didáctico." }
+        { period: "Marzo 2025 - Junio 2025", role: "Profesor de Español", company: "Universidad Masaryk", task: "Monitoreo de sistemas críticos y optimización de logs." }
       ],
       education: [
         { year: "2024-2026", degree: "Desarrollo de Aplicaciones Multiplataforma", school: "CESUR" },
@@ -43,7 +42,6 @@ const data = {
   },
   en: {
     booting: "Initiating portfolio...",
-    nav: { about: "About Me", portfolio: "Portfolio", cv: "Resume" },
     header: { title: "Álvaro Jesús Rodríguez Muñoz", subtitle: "Junior Platform Engineer", status: "STATUS: LOOKING FOR A JOB" },
     contact: { 
       email: "alvarojesus1492@gmail.com", 
@@ -52,7 +50,7 @@ const data = {
     },
     about: { 
       cmd: "> ABOUT ME",
-      text: "I am a Software Developer specializing in automation and cloud infrastructure. My profile combines an initial background in the fields of Journalism and Education as a Spanish teacher, with technical studies in Multiplatform Application Development. During my internship as a Junior Platform Engineer at Semantic Visions, the work was strictly focused on Infrastructure as Code (IaC) and cluster management. Technically, I specialize in provisioning environments on Google Cloud Platform (GCP), configuring resources using Terraform, and managing workloads in Kubernetes, prioritizing pipeline automation and system observability."
+      text: "I am a Software Developer specializing in automation and cloud infrastructure. My profile combines an initial background in the fields of Journalism and Education as a Spanish teacher, with technical studies in Multiplatform Application Development. During my internship as a Junior Platform Engineer at Semantic Visions, the work was strictly focused on Infrastructure as Code (IaC) and cluster management. Technically, I specialize in provisioning environments on Google Cloud Platform (GCP), configuring resources using Terraform, and managing workloads in Kubernetes, prioritizing pipeline automation and system observability"
     },
     terminal: { label: "System Console" },
     skillsTitle: "Stack",
@@ -60,8 +58,8 @@ const data = {
     cv: {
       title: "CV",
       experience: [
-        { period: "March 2026 - June 2026", role: "Junior Platform Engineer", company: "Semantic Visions", task: "Deployment automation on AWS and K8s cluster management." },
-        { period: "March 2025 - June 2025", role: "Teacher of Spanish", company: "Masaryk University", task: "Teaching Spanish as a foreign language and designing educational materials." }
+        { period: "March 2026 - June 2026", role: "Junior Platform Engineer", company: "Semantic Visions" },
+        { period: "March 2025 - June 2025", role: "Teacher of Spanish", company: "Masaryk University" }
       ],
       education: [
         { year: "2024-2026", degree: "Multiplatform Application Development", school: "CESUR" },
@@ -118,18 +116,10 @@ function renderMain() {
     <div class="scanline"></div>
     <div class="ui-container fade-in">
       <nav class="top-nav">
-        <div class="nav-links" style="display: flex; gap: 1rem;">
-          <a href="#about-section" style="color: inherit; text-decoration: none;">${t.nav.about}</a>
-          <a href="#portfolio-section" style="color: inherit; text-decoration: none;">${t.nav.portfolio}</a>
-          <a href="#cv-section" style="color: inherit; text-decoration: none;">${t.nav.cv}</a>
-        </div>
-        
-        <div class="right-nav" style="display: flex; align-items: center; gap: 1rem;">
-          <div class="system-status"><span class="pulse"></span> ${t.header.status}</div>
-          <div class="lang-toggle">
-            <button id="lang-es" class="${currentLang === 'es' ? 'active' : ''}">ES</button>
-            <button id="lang-en" class="${currentLang === 'en' ? 'active' : ''}">EN</button>
-          </div>
+        <div class="system-status"><span class="pulse"></span> ${t.header.status}</div>
+        <div class="lang-toggle">
+          <button id="lang-es" class="${currentLang === 'es' ? 'active' : ''}">ES</button>
+          <button id="lang-en" class="${currentLang === 'en' ? 'active' : ''}">EN</button>
         </div>
       </nav>
 
@@ -162,13 +152,13 @@ function renderMain() {
         </aside>
 
         <section class="main-content">
-          <div class="panel terminal-window" id="about-section">
+          <div class="panel terminal-window">
             <div class="terminal-header">${t.terminal.label}</div>
             <div class="terminal-body" id="terminal-content"></div>
           </div>
 
           <div class="content-row">
-            <div class="panel projects-section" id="portfolio-section">
+            <div class="panel projects-section">
               <h2 class="section-title">// ${t.projects.title}</h2>
               <div class="projects-rect-grid">
                 ${t.projects.list.map(p => `
@@ -186,23 +176,22 @@ function renderMain() {
               </div>
             </div>
 
-            <div class="panel cv-section" id="cv-section">
+            <div class="panel cv-section">
               <h2 class="section-title">// ${t.cv.title}</h2>
               <div class="cv-body">
                 <h3>EXPERIENCE_LOG</h3>
                 ${t.cv.experience.map(e => `
-                  <div class="cv-item" style="margin-bottom: 1rem;">
+                  <div class="cv-item">
                     <span class="cv-date">[${e.period}]</span><br>
-                    <span class="cv-role">${e.role}</span> - ${e.company}<br>
-                    <p style="font-size: 0.9em; margin-top: 0.3rem; opacity: 0.8;">${e.task}</p>
+                    <span class="cv-role">${e.role}</span> - ${e.company} 
                   </div>
                 `).join('')}
                 <h3>EDUCATION_LOG</h3>
                 ${t.cv.education.map(ed => `
-                  <div class="cv-item" style="margin-bottom: 1rem;">
+                  <div class="cv-item">
                     <span class="cv-date">[${ed.year}]</span><br>
                     <span class="cv-role">${ed.degree}</span><br>
-                    <p style="font-size: 0.9em; margin-top: 0.3rem; opacity: 0.8;">${ed.school}</p>
+                    <p>${ed.school}</p>
                   </div>
                 `).join('')}
               </div>
