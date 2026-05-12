@@ -4,8 +4,8 @@ type Lang = 'es' | 'en';
 
 const data = {
   es: {
-    booting: "Iniciando secuencias de despliegue...",
-    header: { title: "Álvaro Jesús Rodríguez Muñoz", subtitle: "Junior Platform Engineer", status: "SISTEMA: OPERATIVO" },
+    booting: "Iniciando portfolio...",
+    header: { title: "Álvaro Jesús Rodríguez Muñoz", subtitle: "Junior Platform Engineer", status: "ESTADO: BUSCANDO EMPLEO" },
     contact: { 
       email: "alvarojesus1492@gmail.com", 
       github: "AlvaroJ1212", 
@@ -41,8 +41,8 @@ const data = {
     }
   },
   en: {
-    booting: "Initiating deployment sequences...",
-    header: { title: "Álvaro Jesús Rodríguez Muñoz", subtitle: "Junior Platform Engineer", status: "SYSTEM: OPERATIONAL" },
+    booting: "Initiating portfolio...",
+    header: { title: "Álvaro Jesús Rodríguez Muñoz", subtitle: "Junior Platform Engineer", status: "STATUS: LOOKING FOR A JOB" },
     contact: { 
       email: "alvarojesus1492@gmail.com", 
       github: "AlvaroJ1212", 
@@ -56,7 +56,7 @@ const data = {
     skillsTitle: "Stack",
     skills: ["Kubernetes", "Terraform", "Docker", "GCP", "CI/CD", "Linux/Bash", "Python", "Java", "SQL"],
     cv: {
-      title: "CV_DATABASE",
+      title: "CV",
       experience: [
         { period: "March 2026 - June 2026", role: "Junior Platform Engineer", company: "Semantic Visions" },
         { period: "March 2025 - June 2025", role: "Teacher of Spanish", company: "Masaryk University" }
@@ -69,7 +69,7 @@ const data = {
       ]
     },
     projects: { 
-      title: "Portfolio_Missions", 
+      title: "Portfolio", 
       list: [
         { name: "Terraform Infrastructure", desc: "This repository serves as the root Infrastructure-as-Code (IaC) project to provision a scalable, secure, and highly available environment on Google Cloud Platform (GCP).", tech: ["Terraform", "GCP"], url: "https://github.com/AlvaroJ1212/terraform-google-infrastructure" },
         { name: "LogWatch", desc: "Application to centralize, store, query, and analyze logs produced by different services, with automatic alert generation when anomalous patterns are detected using configurable YAML rules.", tech: ["Java", "Maven", "PostgreSQL", "Docker"], url: "https://github.com/AlvaroJ1212/log-watch" },
