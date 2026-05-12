@@ -15,7 +15,7 @@ body {
   overflow-x: hidden;
 }
 
-a { text-decoration: none; }
+a { text-decoration: color; }
 
 /* --- 1. EFECTOS GLOBALES Y ARRANQUE --- */
 .scanline {
