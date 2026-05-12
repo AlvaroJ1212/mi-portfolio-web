@@ -176,3 +176,12 @@ a { text-decoration: color; }
   .side-panel { text-align: center; }
   .user-meta { text-align: left; }
 }
+
+.email-link {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  color: var(--neon-blue) !important; 
+}
