@@ -147,7 +147,6 @@ function renderMain() {
           <div class="social-links">
             <a href="https://github.com/${t.contact.github}" target="_blank" class="cyber-btn">GITHUB</a>
             <a href="https://linkedin.com/in/${t.contact.linkedin}" target="_blank" class="cyber-btn">LINKEDIN</a>
-            <a href="/cv.pdf" target="_blank" class="cyber-btn">DOWNLOAD CV</a>
           </div>
         </aside>
 
